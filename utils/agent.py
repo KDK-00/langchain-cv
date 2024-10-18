@@ -17,7 +17,7 @@ def image_editor_agent():
     return initialize_agent(
         agent=AgentType.OPENAI_FUNCTIONS,
         tools=tools,
-        llm=ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo", request_timeout=120),
+        llm=ChatOpenAI(temperature=0, model_name="gpt-4o", request_timeout=120),
         max_iterations=1,
         verbose=True
     )
@@ -28,7 +28,7 @@ def image_generator_agent():
     return initialize_agent(
         agent=AgentType.OPENAI_FUNCTIONS,
         tools=tools,
-        llm=ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo", request_timeout=120),
+        llm=ChatOpenAI(temperature=0, model_name="gpt-4o", request_timeout=120),
         max_iterations=1,
         verbose=True,
     )
